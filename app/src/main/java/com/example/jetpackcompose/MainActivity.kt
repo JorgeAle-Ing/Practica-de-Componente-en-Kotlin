@@ -8,8 +8,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
-import com.example.jetpackcompose.layouts.MyTextoActivity
+import com.example.jetpackcompose.animaciones.MyAnimatedVisibility
+import com.example.jetpackcompose.animaciones.MyColorState
+import com.example.jetpackcompose.animaciones.MyCrossfade
+import com.example.jetpackcompose.animaciones.MyDpState
+import com.example.jetpackcompose.animaciones.MyFloatState
 import com.example.jetpackcompose.ui.theme.JetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,17 +22,16 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyTextoActivity(
+                    MyCrossfade(
                         modifier = Modifier
+                            .fillMaxSize()
                             .padding(innerPadding)
-                            .padding(16.dp)
                     )
                 }
             }
         }
     }
 }
-
 
 
 
