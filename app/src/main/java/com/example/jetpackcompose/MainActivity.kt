@@ -12,7 +12,7 @@ import com.example.jetpackcompose.animaciones.MyAnimatedVisibility
 import com.example.jetpackcompose.animaciones.MyColorState
 import com.example.jetpackcompose.animaciones.MyCrossfade
 import com.example.jetpackcompose.animaciones.MyDpState
-import com.example.jetpackcompose.animaciones.MyFloatState
+import com.example.jetpackcompose.animaciones.MiAnimacionContenido
 import com.example.jetpackcompose.ui.theme.JetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyCrossfade(
+                    MiAnimacionContenido(
                         modifier = Modifier
                             .fillMaxSize()
                             .padding(innerPadding)
